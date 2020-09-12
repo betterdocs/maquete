@@ -13,6 +13,11 @@
     "clean": "gatsby clean",
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
   "dependencies": {
     "gatsby": "^2.24.54",
     "react": "^16.12.0",
