@@ -13,6 +13,11 @@
     "clean": "gatsby clean",
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
   "dependencies": {
     "gatsby": "^2.24.54",
     "react": "^16.12.0",
@@ -21,6 +26,7 @@
   "devDependencies": {
     "babel-jest": "^26.3.0",
     "babel-preset-gatsby": "^0.5.9",
+    "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
     "prettier": "2.1.1",
