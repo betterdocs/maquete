@@ -15,7 +15,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
@@ -30,7 +31,9 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
     "prettier": "2.1.1",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
   },
   "repository": {
     "type": "git",
