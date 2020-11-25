@@ -19,9 +19,10 @@
     }
   },
   "dependencies": {
-    "gatsby": "^2.24.54",
+    "gatsby": "^2.27.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "babel-jest": "^26.3.0",
