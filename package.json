@@ -15,7 +15,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
@@ -25,8 +26,11 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "babel-jest": "^26.3.0",
     "babel-preset-gatsby": "^0.5.9",
+    "backstopjs": "^5.0.6",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
