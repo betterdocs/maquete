@@ -16,6 +16,7 @@
   "husky": {
     "hooks": {
       "pre-push": "npm test",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -31,6 +32,7 @@
     "babel-jest": "^26.3.0",
     "babel-preset-gatsby": "^0.5.9",
     "backstopjs": "^5.0.6",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
@@ -43,5 +45,10 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
